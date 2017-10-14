@@ -5,7 +5,7 @@ namespace Magic;
 class MagicMethods {
 
     private $person;
-    public $object1;
+    public $clone_obj;
 
     public function __construct($name, $email, $age) {
         echo "Constructor called! Let's assign name, email and age as $name, $email and $age!" . PHP_EOL;
@@ -72,7 +72,7 @@ class MagicMethods {
     }
 
     public function __clone() {
-        $this->object1 = clone $this->object1;
+        $this->clone_obj = clone $this->clone_obj;
         foreach ($this->person as &$value) {
             $value = "cloned->" . $value;
         }

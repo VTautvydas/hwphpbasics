@@ -2,7 +2,7 @@
 
 namespace Magic;
 
-include "Magic/MagicMethods.php";
+require "vendor/autoload.php";
 
 // construct, destruct
 echo " __construct():" . PHP_EOL;
@@ -55,11 +55,11 @@ $new_obj = null; // destroy
 
 // clone
 setTitle("__clone():");
-$obj->object1 = new ClonedClass();
+$obj->clone_obj = new ClonedClass();
 $new_obj = clone $obj;
-$obj->object1->fruits = "Grapes";
-echo "There are " . $obj->object1->fruits . " in one class object and "
-    . $new_obj->object1->fruits . " in another." . PHP_EOL; // TEST
+$obj->clone_obj->fruits = "Grapes";
+echo "There are " . $obj->clone_obj->fruits . " in one object and "
+    . $new_obj->clone_obj->fruits . " in another." . PHP_EOL; // TEST
 $new_obj = null;
 
 

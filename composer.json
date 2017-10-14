@@ -1,0 +1,12 @@
+{
+    "name": "homework/php",
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "Magic\\": "Magic/",
+        "Fruits\\Apples\\": "Fruits/Pomes/Apples/",
+        "Fruits\\Berries\\EggPlants\\" : "Fruits/Berries/EggPlants/",
+        "Fruits\\Berries\\Grapes\\" : "Fruits/Berries/Grapes/"
+      }
+    }
+}
