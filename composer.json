@@ -1,6 +1,14 @@
 {
     "name": "homework/php",
-    "require": {},
+    "authors": [{
+      "name": "Tautvydas Venckus",
+      "email": "taut.venckus@gmail.com",
+      "role": "Student"
+    }],
+    "require": {
+      "php" : "^5.5 || ^7.0"
+
+    },
     "autoload": {
       "psr-4": {
         "Magic\\": "Magic/",
